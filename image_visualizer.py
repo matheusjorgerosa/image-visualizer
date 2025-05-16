@@ -83,7 +83,7 @@ class img_manipulation:
     def run(self):
         # Loop principal da aplicação
         while True:
-            event = self.window.read(timeout=100)
+            event, values = self.window.read(timeout=100)
             if event in (sg.WIN_CLOSED, 'Cancelar'):
                 break
 
